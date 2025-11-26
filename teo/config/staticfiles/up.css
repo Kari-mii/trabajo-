@@ -1,0 +1,101 @@
+/* Estilos básicos para la página up.html - estilo simple y minimalista */
+
+body {
+    font-family: Arial, sans-serif; /* Fuente sencilla y legible */
+    background-color: #f0f0f0; /* Color de fondo claro */
+    color: #333333; /* Color de texto oscuro para buena legibilidad */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Todo centrado para simplicidad */
+}
+
+h1.main-header {
+    font-size: 2.5rem;
+    color: #007acc; /* Azul calmado */
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.form-container {
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #cccccc; /* Borde gris suave */
+    border-radius: 8px; /* Bordes redondeados simples */
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto 30px auto; /* Centrado con margen abajo */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Separación simple y consistente entre elementos */
+}
+
+label {
+    font-weight: normal;
+    font-size: 1rem;
+    color: #555555;
+    text-align: left;
+}
+
+textarea, input.user_file {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical; /* Permite ajustar altura */
+    background-color: #fafafa;
+    color: #333333;
+}
+
+textarea::placeholder {
+    color: #999999;
+    font-style: italic;
+}
+
+input.user_file {
+    cursor: pointer;
+}
+
+button.button1 {
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+button.button1:hover {
+    background-color: #005fa3;
+}
+
+/* Estilos responsivos simples */
+@media (max-width: 480px) {
+    h1.main-header {
+        font-size: 1.8rem;
+    }
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+    button.button1 {
+        font-size: 1rem;
+        padding: 10px;
+        max-width: 100%;
+    }
+}
